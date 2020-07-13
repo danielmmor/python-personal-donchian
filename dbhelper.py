@@ -33,7 +33,7 @@ class DBHelper:
         stockidx = 'CREATE INDEX IF NOT EXISTS stockIndex ON '+owner+'(stocks ASC)'
         porhridx = 'CREATE INDEX IF NOT EXISTS porhrIndex ON '+owner+'(porthora ASC)'
         
-        stcksstmt = 'CREATE TABLE IF NOT EXISTS stocks(idxid text UNIQUE, liststck text, dia text, )'
+        stcksstmt = 'CREATE TABLE IF NOT EXISTS stocks(idxid text UNIQUE, liststck text, dia text)'
         idxidx = 'CREATE INDEX IF NOT EXISTS idxIndex ON stocks(idxid ASC)'
         liststcksidx = 'CREATE INDEX IF NOT EXISTS stckIndex ON stocks(liststck ASC)'
         diaidx = 'CREATE INDEX IF NOT EXISTS dayIndex ON stocks(dia ASC)'
