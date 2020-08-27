@@ -1,0 +1,6 @@
+*.pyc
+/donchian.py
+/config.cfg
+/stocksDan.sqlite
+/git-remove.sh
+obj/
